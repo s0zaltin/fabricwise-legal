@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FabricWise — Privacy Policy</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1f1b;
+    }
+
+```
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  margin-top: 1.6em;
+  font-size: 1.15rem;
+}
+
+code {
+  background: #f0ece0;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+a {
+  color: #3f5547;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+```
+
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — FabricWise</h1>
+
+  <p>
+    <strong>Effective date:</strong> 2026-06-19<br>
+    <strong>Operator:</strong> Seckin Ozaltin ("we", "us", "our")<br>
+    <strong>Contact:</strong> <a href="mailto:elitefutureunplugged@gmail.com">elitefutureunplugged@gmail.com</a>
+  </p>
+
+  <p>
+    This Privacy Policy explains what data the FabricWise mobile app ("FabricWise", the "app") collects,
+    how we use it, who processes it on our behalf, and your choices.
+  </p>
+
+  <h2>Who we are</h2>
+  <p>
+    FabricWise is operated by Seckin Ozaltin. For any privacy question or request, contact us at
+    <a href="mailto:elitefutureunplugged@gmail.com">elitefutureunplugged@gmail.com</a>.
+  </p>
+
+  <h2>Information we collect</h2>
+
+  <p>
+    <strong>Account information.</strong> When you create an account you provide an
+    <strong>email address and password</strong>. Authentication is handled by Supabase Auth.
+    We store your email to identify your account and to communicate with you about it.
+  </p>
+
+  <p>
+    <strong>Wardrobe and garment data.</strong> Information you add about your clothing and laundry,
+    including garment names, categories, fabric and color descriptions, care-label details
+    such as wash temperature, spin, ironing, brand, size, and optional shopping details you choose
+    to enter, such as price, currency, store, purchase link, order number, and dates.
+    It also includes homes, household profiles you create, washing machines and their programs,
+    and wash-session history.
+  </p>
+
+  <p>
+    <strong>Images.</strong> Photos you upload of garments, care labels, washing machines,
+    and optional profile avatars. Images are stored in private Supabase Storage, organized so that
+    each user's files are isolated to their own folder.
+  </p>
+
+  <p>
+    <strong>AI analysis.</strong> When you use AI features such as garment scan, care-label scan,
+    machine scan, wash plans, or outfit suggestions, the relevant <strong>images and/or garment and weather text
+    are sent to Anthropic Claude</strong> through our secure server-side functions so the model can extract
+    care information or generate suggestions. Our AI provider processes this content to return results.
+    The AI provider's API key is held only on our servers and never in the app.
+  </p>
+
+  <p>
+    <strong>Location and weather.</strong> If you use outfit suggestions, the app may request
+    <strong>foreground precise location</strong> permission to determine local weather, including
+    reverse-geocoding your coordinates to a place name, so suggestions match current conditions.
+    You can decline this permission; the feature then falls back to manually entered or unavailable weather.
+  </p>
+
+  <p>
+    <strong>Subscription and purchase status.</strong> If you subscribe to FabricWise Plus,
+    purchases are processed by <strong>Google Play Billing</strong> and managed through
+    <strong>RevenueCat</strong>. We receive and store subscription status information such as your
+    entitlement tier, store, product identifier, subscription state, and an associated subscription
+    user identifier. We do <strong>not</strong> receive or store your full payment card details.
+  </p>
+
+  <p>
+    <strong>Device-local preferences.</strong> Settings such as relaxing-music on/off and selected track,
+    theme, and language are stored <strong>only on your device</strong> and are not transmitted to us.
+  </p>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To provide and operate the app, including your wardrobe, laundry plans, outfit suggestions, and history.</li>
+    <li>To run AI features you request.</li>
+    <li>To provide local weather-based suggestions if you allow location access.</li>
+    <li>To manage your subscription and entitlements.</li>
+    <li>To secure the service, prevent abuse, and enforce usage limits.</li>
+    <li>To respond to your support and privacy requests.</li>
+  </ul>
+
+  <h2>Service providers</h2>
+  <p>We use the following providers to operate FabricWise:</p>
+  <ul>
+    <li><strong>Supabase</strong> — authentication, database, file storage, and serverless Edge Functions hosting.</li>
+    <li><strong>Anthropic</strong> — AI processing of images and text for AI features.</li>
+    <li><strong>RevenueCat</strong> and <strong>Google Play Billing</strong> — subscription management and payment processing.</li>
+    <li><strong>Expo</strong> — app build and delivery.</li>
+    <li>A <strong>weather data provider</strong> — to return forecasts for your location.</li>
+  </ul>
+
+  <h2>How your data is stored and protected</h2>
+  <p>
+    Your data is isolated per user through row-level security, and images are kept in a private storage
+    bucket scoped to your account folder. AI requests are made server-side so credentials are never exposed
+    in the app. We retain your data while your account exists.
+  </p>
+
+  <h2>Account deletion and retention</h2>
+  <p>
+    You can permanently delete your account at any time from
+    <strong>Account → Danger zone → Delete account</strong> in the app, or by emailing us.
+    See our <a href="https://s0zaltin.github.io/fabricwise-legal/account-deletion">Account Deletion page</a>.
+    Deleting your account removes your account record, wardrobe data, uploaded images, and history.
+  </p>
+
+  <p>
+    For legal, financial, and fraud-prevention purposes, we retain
+    <strong>anonymized billing and audit records</strong>: when an account is deleted, the user link on those
+    billing records is removed (<code>billing_events.user_id</code> is set to NULL), so the records no longer
+    identify you.
+  </p>
+
+  <p>
+    Deleting your account does <strong>not</strong> cancel any active Google Play subscription.
+    You must cancel it separately in Google Play.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    You may access, correct, or delete your data. The fastest way to delete everything is the in-app deletion
+    flow; you may also contact us at
+    <a href="mailto:elitefutureunplugged@gmail.com">elitefutureunplugged@gmail.com</a>.
+    As we operate under the laws of <strong>Poland</strong> and the EU, you have rights under the
+    <strong>GDPR</strong>, including access, rectification, erasure, restriction, portability, and objection,
+    and the right to lodge a complaint with the Polish supervisory authority, the President of the Personal
+    Data Protection Office, UODO.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    FabricWise is <strong>not directed to children</strong> and is not intended for use by children.
+    We do not knowingly collect data from children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy; we will revise the effective date above and, where appropriate,
+    notify you in the app.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Seckin Ozaltin —
+    <a href="mailto:elitefutureunplugged@gmail.com">elitefutureunplugged@gmail.com</a>
+  </p>
+</body>
+</html>
