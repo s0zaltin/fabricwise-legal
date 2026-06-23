@@ -95,8 +95,10 @@ ul {
 
   <p>
     <strong>Location and weather.</strong> If you use outfit suggestions, the app may request
-    <strong>foreground precise location</strong> permission to determine local weather, including
+    <strong>foreground approximate location</strong> permission to determine local weather, including
     reverse-geocoding your coordinates to a place name, so suggestions match current conditions.
+    FabricWise may use your approximate foreground location only when needed for weather-based outfit
+    suggestions. The app does not collect precise location and does not use background location.
     You can decline this permission; the feature then falls back to manually entered or unavailable weather.
   </p>
 
@@ -111,6 +113,11 @@ ul {
   <p>
     <strong>Device-local preferences.</strong> Settings such as relaxing-music on/off and selected track,
     theme, and language are stored <strong>only on your device</strong> and are not transmitted to us.
+  </p>
+
+  <p>
+    <strong>Microphone and audio.</strong> FabricWise does not record audio, collect microphone data,
+    or request microphone permission. Optional in-app relaxing music playback does not use the microphone.
   </p>
 
   <h2>How we use your information</h2>
@@ -130,14 +137,15 @@ ul {
     <li><strong>Anthropic</strong> — AI processing of images and text for AI features.</li>
     <li><strong>RevenueCat</strong> and <strong>Google Play Billing</strong> — subscription management and payment processing.</li>
     <li><strong>Expo</strong> — app build and delivery.</li>
-    <li>A <strong>weather data provider</strong> — to return forecasts for your location.</li>
+    <li>A <strong>weather data provider (Open-Meteo)</strong> — to return forecasts for your location.</li>
   </ul>
 
   <h2>How your data is stored and protected</h2>
   <p>
     Your data is isolated per user through row-level security, and images are kept in a private storage
     bucket scoped to your account folder. AI requests are made server-side so credentials are never exposed
-    in the app. We retain your data while your account exists.
+    in the app. Data is transmitted using encrypted connections such as HTTPS/TLS where applicable.
+    We retain your data while your account exists.
   </p>
 
   <h2>Account deletion and retention</h2>
